@@ -425,3 +425,151 @@ section{
   }
   
 }
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    padding: 2rem 5%;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom-left-radius: 2rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .navbar a {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+  }
+
+  #menu-icon {
+    display: block;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+
+  .home {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  .home-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-img img {
+    width: 70vw;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  .about-img img {
+    width: 70vw;
+  }
+
+  .about-content h2 {
+    font-size: 4rem;
+  }
+
+  .about-content p {
+    font-size: 1.6rem;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .service-info h4 {
+    font-size: 3rem;
+  }
+
+  .service-info p {
+    font-size: 1.2rem;
+  }
+
+  .projects-box {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .project-card img {
+    max-width: 80%;
+  }
+
+  .contact form {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer ul li {
+    margin-left: 10px;
+  }
+
+  .footer ul li a {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+
+  .header {
+    padding: 1.5rem 5%;
+  }
+
+  .home-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .home-content h3 {
+    font-size: 2.5rem;
+  }
+
+  .home-content p {
+    font-size: 1.4rem;
+  }
+
+  .about-content h2 {
+    font-size: 3rem;
+  }
+
+  .about-content p {
+    font-size: 1.4rem;
+  }
+
+  .service-info h4 {
+    font-size: 2.5rem;
+  }
+
+  .service-info p {
+    font-size: 1.1rem;
+  }
+
+  .project-card h3 {
+    font-size: 2.5rem;
+  }
+
+  .project-card p {
+    font-size: 1.4rem;
+  }
+
+  .footer ul li a {
+    font-size: 1.4rem;
+  }
+}
